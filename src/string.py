@@ -1,3 +1,6 @@
+# TODO:
+#ord('c') - ord('a')
+#chr
 
 def test_string():
     # multiple ways to reverse a string
@@ -5,5 +8,3 @@ def test_string():
     s.reverse()
     t = reversed(s)
     t = s[::-1]
-
-    assert
