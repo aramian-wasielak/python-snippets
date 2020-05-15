@@ -1,3 +1,5 @@
+# TODO: intersection
+#k in a[i].intersection(b[j]):
 
 def add_strings(s1, s2, base):
     n1 = len(s1)
