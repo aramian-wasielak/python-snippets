@@ -4,6 +4,8 @@ import unittest
 
 class TestStringMethods(unittest.TestCase):
 
+    # TODO: graph = collections.defaultdict(set)
+
     def test_all(self):
         nums = [1, 2, 3, 4, 4, 4, 2, 1, 1]
 
