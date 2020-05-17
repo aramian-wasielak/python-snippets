@@ -5,7 +5,7 @@ This is my (subjective) list of useful Python code snippets and patterns. This c
 * [Strings](src/test_string.py)
 * [Arrays](src/test_array.py)
 * [Linked Lists](src/test_linked_list.py)
-* [Binary Trees](src/test_binary_tree.py)
+* [Binary Trees](src/test_tree.py)
 * [Graphs](src/test_graph.py)
 * [Dynamic Programming](src/test_dynamic_prog.py)
 * [Heaps](src/test_heapy.py)
