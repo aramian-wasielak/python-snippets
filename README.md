@@ -1,10 +1,12 @@
-# Useful Python Code Snippets
+# Useful Python Code Snippets (Work in Progress)
 
-* Array
-* Linked List
-* Binary Tree
-* Graph
+This is my (subjective) list of useful Python code snippets and patterns. This code covers the following topics:
 
-
-https://web.archive.org/web/20190107102714/http://markjoshi.com/design
-https://web.archive.org/web/20160817064828if_/http://markjoshi.com/design/ClassDiagram.jpg
+* Strings
+* Arrays
+* Linked Lists
+* Binary Trees
+* Graphs
+* Dynamic Programming (TODO)
+* Heaps
+* Math related
