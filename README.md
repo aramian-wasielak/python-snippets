@@ -11,4 +11,4 @@ This is my (subjective) list of useful Python code snippets and patterns. This c
 * [Heaps](src/test_heap.py) (TODO)
 * [Math](src/test_math.py)
 
-Each topic area has a corresponding file organized as a set of unit tests.
+Each topic area is organized as one file with a set of unit tests.
