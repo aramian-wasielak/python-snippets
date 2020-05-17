@@ -1,7 +1,7 @@
 import unittest
 
 
-class TestMathMetods():
+class TestMathMetods(unittest.TestCase):
     # TODO:
     #  - intersection of sets: a[i].intersection(b[j]):
     #  - caching/memoizing: functools.lru_cache
