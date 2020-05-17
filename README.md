@@ -2,7 +2,7 @@
 
 **Please Note: This project is work in progress -- it will grow over time.**
 
-This is my (subjective) list of useful Python code snippets and patterns. Some of this code is quite simple and some of it more complex, but in either case it is quite useful.
+This is my (subjective) list of useful Python code snippets and patterns. Some of this code is quite simple and some of it more complex, but in either case it does come handy.
 
 This code covers the following topics:
 
