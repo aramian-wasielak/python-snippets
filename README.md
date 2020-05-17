@@ -1,6 +1,6 @@
 # Useful Python Code Snippets (Work in Progress)
 
-This is my (subjective) list of useful Python code snippets and patterns. This code covers the following topics:
+This is my (subjective) list of useful Python code snippets and patterns. Some of this code is quite simple and some of it more complex, but in either case these patternscan be very useful. This code covers the following topics:
 
 * [Strings](src/test_string.py)
 * [Arrays](src/test_array.py)
