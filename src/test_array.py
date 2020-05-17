@@ -2,11 +2,15 @@ import collections
 import unittest
 
 
-class TestStringMethods(unittest.TestCase):
-
-    # TODO: graph = collections.defaultdict(set)
+class TestArrayMethods(unittest.TestCase):
 
     def test_all(self):
+        """
+        Test array related snippets
+        """
+
+        # TODO: graph = collections.defaultdict(set)
+
         nums = [1, 2, 3, 4, 4, 4, 2, 1, 1]
 
         # Fastest (from coding perspective)

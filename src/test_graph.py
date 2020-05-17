@@ -1,1 +1,1 @@
-# TODO: walk through a graph
+# TODO: walk a graph with multiple edges

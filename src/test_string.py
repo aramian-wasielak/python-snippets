@@ -4,27 +4,31 @@ import unittest
 class TestStringMethods(unittest.TestCase):
 
     def test_window(self):
-        # TODO: Fix this!
-        
-        s = "abcdeghijklmn"
+        """
+        Processing a string while maintaining a moving window of characters.
+        """
+        s = "abcdeg"
         win_size = 3
 
         ns = len(s)
         win_start = 0
-        win_end = 0
+        windows = []
         for i in range(ns):
             # Process a new char
-            win_end += 1
+            win_end = i
 
             if i >= win_size:
                 # Remove a character from the window
                 win_start += 1
 
-            # Process
-            if i >= win_size-1:
-                print(s[win_start: win_end+1])
+            # Process the current window once the window is of the right size
+            if i >= win_size - 1:
+                windows.append(s[win_start: win_end + 1])
 
-    def test_all(self):
+        correct_windows = ["abc", "bcd", "cde", "deg"]
+        self.assertEqual(correct_windows, windows)
+
+    def test_reverse(self):
 
         # How to reverse a string
         s = 'abcdefghijk'
@@ -35,7 +39,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(s2, s3)
 
         # Converting characters to their relative alphabet
-        self.assertEqual((ord('c') - ord('a')), 3-1)
+        self.assertEqual((ord('c') - ord('a')), 3 - 1)
 
         # Converting from an ASCI character and back to a character
         self.assertEqual(chr(ord('a')), 'a')
