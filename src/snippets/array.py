@@ -65,7 +65,7 @@ class TestArrayMethods(unittest.TestCase):
                 freq2[n] = 0
             freq2[n] += 1
 
-        # Simillar to the one above but no 'if' statement needed
+        # Similar to the one above but no 'if' statement needed
         freq3 = {}
         for n in nums:
             freq3[n] = freq3.get(n, 0) + 1

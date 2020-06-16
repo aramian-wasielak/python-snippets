@@ -1,11 +1,11 @@
 import unittest
 
 
-class TestMathMetods(unittest.TestCase):
+class TestMathMethods(unittest.TestCase):
     # TODO:
     #  - intersection of sets: a[i].intersection(b[j]):
     #  - caching/memoizing: functools.lru_cache
-    #  - combinantions itertools.permutations
+    #  - combinations itertools.permutations
     #  - random.randint(a, b)
 
     def test_add_strings(self):
