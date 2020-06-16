@@ -10,7 +10,6 @@ class TreeNode:
 
 
 class TestTreeMethods(unittest.TestCase):
-
     @staticmethod
     def generate_tree(depth):
         root = node = TreeNode(1)
@@ -39,5 +38,5 @@ class TestTreeMethods(unittest.TestCase):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

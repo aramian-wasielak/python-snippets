@@ -3,7 +3,6 @@ import unittest
 
 
 class TestArrayMethods(unittest.TestCase):
-
     def test_all(self):
         """
         Test array related snippets
@@ -32,6 +31,25 @@ class TestArrayMethods(unittest.TestCase):
         self.assertEqual(freq, freq2)
         self.assertEqual(freq, freq3)
 
+    def test_binary_search(self):
+        nums = [1, 3, 4, 5, 7, 9]
+        left = 0
+        right = len(nums)
 
-if __name__ == '__main__':
+    def test_leftmost_search(self):
+        pass
+
+
+if __name__ == "__main__":
     unittest.main()
+    """
+    Ability to rewrite a number of strings at the same time is useful.
+            S = list(S)
+        
+        for i, x, y in sorted(zip(indexes, sources, targets), reverse=True):
+            if S[i: i+len(x)] == list(x):
+                S[i: i+len(x)] = list(y)
+            
+        return ''.join(S)
+
+    """

@@ -5,6 +5,7 @@ class TestMathMetods(unittest.TestCase):
     # TODO:
     #  - intersection of sets: a[i].intersection(b[j]):
     #  - caching/memoizing: functools.lru_cache
+    #  - combinantions itertools.permutations
 
     def test_add_strings(self):
         s1 = "1234"
@@ -32,5 +33,5 @@ class TestMathMetods(unittest.TestCase):
         self.assertEqual(test_ans, ans)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
