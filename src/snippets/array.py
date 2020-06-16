@@ -13,7 +13,34 @@ def binary_search(nums, target):
             left = mid + 1
         else:
             right = mid - 1
+    return -1
 
+
+def binary_search_left(nums, target):
+    left = 0
+    right = len(nums) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if nums[mid] == target and (mid == 0 or nums[mid - 1] != target):
+            return mid
+        elif target <= nums[mid]:
+            right = mid - 1
+        else:
+            left = mid + 1
+    return -1
+
+
+def binary_search_right(nums, target):
+    left = 0
+    right = len(nums) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if nums[mid] == target and (mid == (len(nums) - 1) or nums[mid + 1] != target):
+            return mid
+        elif nums[mid] <= target:
+            left = mid + 1
+        else:
+            right = mid - 1
     return -1
 
 
@@ -47,14 +74,28 @@ class TestArrayMethods(unittest.TestCase):
         self.assertEqual(freq, freq3)
 
     def test_binary_search(self):
-        nums = [1, 3, 4, 5, 7, 9]
+        nums = [1, 3, 4, 4, 4, 5, 7, 9]
         self.assertEqual(binary_search(nums, 3), 1)
-        self.assertEqual(binary_search(nums, 9), 5)
+        self.assertEqual(nums[binary_search(nums, 4)], 4)
+        self.assertEqual(binary_search(nums, 9), 7)
         self.assertEqual(binary_search(nums, 1), 0)
         self.assertEqual(binary_search(nums, 6), -1)
 
     def test_leftmost_search(self):
-        pass
+        nums = [1, 3, 4, 4, 4, 5, 7, 9]
+        self.assertEqual(binary_search_left(nums, 3), 1)
+        self.assertEqual(binary_search_left(nums, 4), 2)
+        self.assertEqual(binary_search_left(nums, 9), 7)
+        self.assertEqual(binary_search_left(nums, 1), 0)
+        self.assertEqual(binary_search_left(nums, 6), -1)
+
+    def test_rightmost_search(self):
+        nums = [1, 3, 4, 4, 4, 5, 7, 9]
+        self.assertEqual(binary_search_right(nums, 3), 1)
+        self.assertEqual(binary_search_right(nums, 4), 4)
+        self.assertEqual(binary_search_right(nums, 9), 7)
+        self.assertEqual(binary_search_right(nums, 1), 0)
+        self.assertEqual(binary_search_right(nums, 6), -1)
 
 
 if __name__ == "__main__":

@@ -6,6 +6,7 @@ class TestMathMetods(unittest.TestCase):
     #  - intersection of sets: a[i].intersection(b[j]):
     #  - caching/memoizing: functools.lru_cache
     #  - combinantions itertools.permutations
+    #  - random.randint(a, b)
 
     def test_add_strings(self):
         s1 = "1234"
