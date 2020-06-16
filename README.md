@@ -6,7 +6,7 @@ This is my (subjective) list of useful Python code snippets and patterns. Some o
 
 This code covers the following topics:
 
-* [Strings](src/snippets/string.py)
+* [Strings](src/snippets/strings.py)
 * [Arrays](src/snippets/array.py)
 * [Linked Lists](src/snippets/linked_list.py) (TODO)
 * [Binary Trees](src/snippets/tree.py)
