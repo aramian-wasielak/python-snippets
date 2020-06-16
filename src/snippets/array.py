@@ -2,6 +2,21 @@ import collections
 import unittest
 
 
+def binary_search(nums, target):
+    left = 0
+    right = len(nums) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if nums[mid] == target:
+            return mid
+        elif nums[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+
+    return -1
+
+
 class TestArrayMethods(unittest.TestCase):
     def test_all(self):
         """
@@ -33,8 +48,10 @@ class TestArrayMethods(unittest.TestCase):
 
     def test_binary_search(self):
         nums = [1, 3, 4, 5, 7, 9]
-        left = 0
-        right = len(nums)
+        self.assertEqual(binary_search(nums, 3), 1)
+        self.assertEqual(binary_search(nums, 9), 5)
+        self.assertEqual(binary_search(nums, 1), 0)
+        self.assertEqual(binary_search(nums, 6), -1)
 
     def test_leftmost_search(self):
         pass
