@@ -1,0 +1,10 @@
+name: python-snippets 
+channels:
+  - conda-forge
+  - anaconda
+dependencies:
+  - python=3.7
+  - numpy
+  - scipy
+  - pytest
+  - pre_commit
